@@ -1,0 +1,101 @@
+.grid{
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    justify-content: center;
+    grid-gap: 100px;
+    padding: 80px;
+}
+.grid-item {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.102);
+    text-align: center;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.grid-item
+img{
+    width: 150px;
+    height: 150px;
+    margin-top: 10px;
+}
+.grid-item
+img:hover{
+    width: 155px;
+    height: 150px;
+    transition: 0.3s;
+}
+
+.grid-item
+span {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: #fff;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background: linear-gradient(to bottom, #1160a5, #94cdff);
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border-radius: 20px;
+    color: #09274f;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #fff;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+
+@media  (max-width: 1024px) {
+    .grid {
+        grid-template-columns: 1fr; /* Une seule colonne en version mobile */
+        grid-gap: 20px; /* Espacement réduit entre les éléments */
+        padding: 20px; /* Réduire le padding */
+    }
+    .grid-item
+    img{
+    width: 100px;
+    height: 100px;
+}
+}

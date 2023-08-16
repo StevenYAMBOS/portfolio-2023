@@ -1,0 +1,31 @@
+<nav class="navbar 
+bg-stone-900 
+static 
+w-full 
+flex-col 
+text-center">
+    <img class="logo-steven m-auto"
+    src="../../assets/steven.jpg">
+
+    <ul class="nav-menu 
+    text-white 
+    text-2xl 
+    text-center">
+    <li>
+        <a class="home-menu" 
+        routerLink="/home" 
+        routerLinkActive="active">Accueil</a>
+    </li>
+    <li>
+        <a routerLink="/about" 
+        routerLinkActive="active">À propos</a>
+    </li>
+    </ul>
+    <button class="button-contact 
+    w-40 
+    h-12 my-6 
+    text-white 
+    rounded 
+    bg-gray-600"
+    (click)="goToPage('contact')">Me contacter ✉️</button>
+</nav>

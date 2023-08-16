@@ -1,0 +1,10 @@
+.projects-section h2 {
+    font-family: 'Handjet', cursive;
+}
+.technos-container img{
+    width: 40px;
+}
+.technos-container img:hover {
+    opacity: 0.6;
+    transition: 0.3s;
+}

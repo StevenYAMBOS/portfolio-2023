@@ -1,0 +1,33 @@
+:root {
+    font-family: 'Handjet', cursive;
+}
+
+.navbar {
+    font-family: 'Handjet', cursive;
+}
+.logo-steven{
+    width: 70px;
+    clip-path: circle();
+}
+
+@media screen and (min-width: 768px) {
+    .navbar{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+
+    .logo-steven{
+        margin: 0;
+    }
+    .nav-menu {
+        display: flex;
+        gap: 20px;
+    }
+    .home-menu {
+        border-right: 1px solid;
+        padding-right: 20px;
+    }
+}

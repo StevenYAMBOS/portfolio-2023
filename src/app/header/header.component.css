@@ -1,0 +1,56 @@
+.header {
+    background-image: url("../../assets/header-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.steven-title {
+    font-family: 'Handjet', cursive;
+}
+.header-container 
+.steven-header {
+    clip-path: circle();
+}
+.skill-icons {
+    width: 40px;
+    height: 40px;
+}
+
+/* Large screen */
+/* @media screen and (min-width:992px) {
+    .skill-icons {
+        width: 60px;
+        height: 60px;
+    }
+} */
+
+/* Écrans moyen */
+@media screen and (min-width:768px) {
+    .skill-icons {
+        width: 60px;
+        height: 60px;
+    }
+    .skill-icons:hover {
+        /* width: 64px;
+        height: 64px; */
+        opacity: 0.8;
+        transition: 0.3s;
+    }
+}
+
+/* Petits écrans */
+/* @media screen and (max-width:640px) and (max-width: 768px) {
+    .steven-title{
+        font-size: 14pt;
+    }
+    .skills-title{
+        margin: 20px 0 10px 0;
+        font-size: 14pt;
+    }
+    .skills-container{
+        gap: 30px;
+    }
+    .skill-icons {
+        width: 30px;
+        height: 30px;
+    }
+} */
