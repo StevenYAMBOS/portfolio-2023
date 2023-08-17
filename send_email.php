@@ -2,9 +2,9 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require '/home/stevenyambos/Téléchargements/PHPMailer.php';
-require '/home/stevenyambos/Téléchargements/SMTP.php';
-require '/home/stevenyambos/Téléchargements/Exception.php';
+require '/home/stevenyambos/Téléchargements/PHPMailer-master/src/PHPMailer.php';
+require '/home/stevenyambos/Téléchargements/PHPMailer-master/src/SMTP.php';
+require '/home/stevenyambos/Téléchargements/PHPMailer-master/src/Exception.php';
 
 
 require 'vendor/autoload.php'; // Chemin vers l'autoloader de PHPMailer
@@ -23,7 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'stevenyambosàgmail.com';
+        $mail->Username = 'stevenyambos@gmail.com';
         $mail->Password = 'Steven-Yambos-05';
         $mail->SMTPSecure = 'tls';
         $mail->Port = 587;

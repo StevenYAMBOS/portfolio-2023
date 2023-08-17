@@ -1,5 +1,21 @@
-.pageNotFound-section {
+.pageNotFound-section{
+    background-color: #000000;
+    height: 100vh;
+}
+.pageNotFound-section
+.container {
     background-image: url(../../assets/ryukillsyou.gif);
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     background-size: cover;
+    height: 100vh;
+}
+
+@media screen and (max-width: 768px) {
+    .pageNotFound-section
+    .container {
+        background-image: url(../../assets/ryukillsyou.gif);
+        background-repeat: repeat-y;
+        background-size: contain;
+        height: 100vh;
+    }
 }
