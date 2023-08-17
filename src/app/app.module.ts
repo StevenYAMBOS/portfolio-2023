@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, Meta } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -16,6 +16,7 @@ import { RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { ContactPageComponent } from './contact-page/contact-page.component';
 import { LanguagesSectionComponent } from './languages-section/languages-section.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { LanguagesSectionComponent } from './languages-section/languages-section
     HomeComponent,
     ContactPageComponent,
     LanguagesSectionComponent,
+    PageNotFoundComponent,
   ],
   imports: [
     BrowserModule,
@@ -38,7 +40,7 @@ import { LanguagesSectionComponent } from './languages-section/languages-section
     MatToolbarModule,
     RouterModule
   ],
-  providers: [],
+  providers: [Meta],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
