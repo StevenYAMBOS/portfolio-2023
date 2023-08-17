@@ -4,20 +4,21 @@ static
 w-full 
 flex-col 
 text-center">
-    <img class="logo-steven m-auto"
-    src="../../assets/steven.jpg">
+<a routerLink="/"><img class="logo-steven m-auto md:cursor-pointer"
+    src="../../assets/Steven.webp"></a>
 
     <ul class="nav-menu 
     text-white 
     text-2xl 
     text-center">
     <li>
-        <a class="home-menu" 
+        <a class="home-menu md:hover:font-semibold" 
         routerLink="/home" 
         routerLinkActive="active">Accueil</a>
     </li>
     <li>
-        <a routerLink="/about" 
+        <a class="md:hover:font-semibold"
+        routerLink="/about" 
         routerLinkActive="active">À propos</a>
     </li>
     </ul>
@@ -26,6 +27,9 @@ text-center">
     h-12 my-6 
     text-white 
     rounded 
-    bg-gray-600"
+    bg-gray-600
+    md:hover:bg-white
+    md:hover:text-gray-600
+    "
     (click)="goToPage('contact')">Me contacter ✉️</button>
 </nav>
