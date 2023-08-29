@@ -21,7 +21,7 @@ export class HomeComponent implements OnInit {
       this.slug = params['slug'];
       this.metaService.addTag( { name:'description',content:"Venez découvrir qui je suis, avec un peu de chance vous allez m'adorer :)"});
       this.metaService.addTag({ name: 'robots', content: 'index,follow' });
-      this.metaService.addTag({ property: 'og:title', content: 'Potfolio Steven YAMBOS' });
+      this.metaService.addTag({ property: 'og:title', content: 'Portfolio Steven YAMBOS' });
     });
   }
 

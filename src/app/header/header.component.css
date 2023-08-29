@@ -15,14 +15,6 @@
     height: 40px;
 }
 
-/* Large screen */
-/* @media screen and (min-width:992px) {
-    .skill-icons {
-        width: 60px;
-        height: 60px;
-    }
-} */
-
 /* Écrans moyen */
 @media screen and (min-width:768px) {
     .skill-icons {

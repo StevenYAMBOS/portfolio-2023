@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { Title } from '@angular/platform-browser';
+
 
 @Component({
   selector: 'page-not-found',
@@ -8,7 +10,11 @@ import { Router } from '@angular/router';
 })
 export class PageNotFoundComponent {
 
-  constructor(private router: Router){}
+  constructor(private router: Router, private titleService: Title){}
+
+  ngOnInit(): void {
+    this.titleService.setTitle('Qu\'est\-ce que tu fais ici lol ?');
+  }
 
   goToPage(home: string): void {
     this.router.navigate([`${home}`]);
