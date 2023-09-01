@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule, Meta } from '@angular/platform-browser';
+import {HttpClientModule} from '@angular/common/http';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -38,7 +40,10 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     BrowserModule,
     AppRoutingModule,
     MatToolbarModule,
-    RouterModule
+    RouterModule,
+    HttpClientModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [Meta],
   bootstrap: [AppComponent]
